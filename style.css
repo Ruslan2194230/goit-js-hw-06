@@ -1,0 +1,37 @@
+body {
+  padding: 16px;
+}
+ul {
+  list-style: none;
+}
+.galery-item {
+  display: flexbox;
+  border: 3px solid green;
+  background-color: pink;
+  padding: 10px 0px;
+
+  width: 300px;
+  height: auto;
+}
+
+.galery-img {
+  display: block;
+  width: 250px;
+  height: auto;
+
+  margin: 0 auto;
+}
+
+/* styles for task-6.js */
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.invalid {
+    border-color: #f44336;
+  }
+
+  #validation-input.valid {
+    border-color: #4caf50;
+  }
