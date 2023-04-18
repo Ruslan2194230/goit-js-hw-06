@@ -9,15 +9,17 @@ incomingDataInput.addEventListener("input", () => {
   outgoingDataInput.textContent = "незнакомец";
 });
 
-
 ////
 
-// const incomingDataInput = document.querySelector("#name-input");
-// const outgoingDataInput = document.querySelector("#name-output");
+// const inputName = document.querySelector('#name-input');
+// const outputName = document.querySelector('#name-output');
 
-// incomingDataInput.oninput = function () {
-//   if (incomingDataInput.value === "") {
-//     outgoingDataInput.innerHTML = "незнакомец";
-//   }
-//   outgoingDataInput.innerHTML = incomingDataInput.value;
-// };
+// inputName.addEventListener('input', () => {
+// if(inputName.value !== ''){
+//   outputName.textContent = inputName.value
+//   return
+// }
+// outputName.textContent = 'незнакомец'
+// })
+
+

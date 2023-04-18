@@ -6,9 +6,9 @@ const btnRender = document.querySelector("[data-action = 'render']");
 const btnDestroy = document.querySelector("[data-action = 'destroy']");
 const divBoxes = document.querySelector("#boxes");
 
-function createBoxes(amount) {
+function createBoxes() {
   const boxes = [];
-  for (let i = 0; i < amount; i++) {
+  for (let i = 0; i < 100; i++) {
     const box = document.createElement("div");
 
     box.style.width = `${30 + i * 10}px`;

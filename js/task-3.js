@@ -13,13 +13,22 @@ const images = [
   },
 ];
 
-const getGallery = document.querySelector("#gallery");
+// const getGallery = document.querySelector("#gallery");
 
-const galleryItemString = images
-  .map(
-    (image) =>
-      `<li class = 'galery-item'> <img src='${image.url}' alt = '${image.alt}' class = 'galery-img'> </li>`
-  )
-  .join("");
+// const galleryItemString = images
+//   .map(
+//     (image) =>
+//       `<li class = 'galery-item'> <img src='${image.url}' alt = '${image.alt}' class = 'galery-img'> </li>`
+//   )
+//   .join("");
 
-getGallery.insertAdjacentHTML("beforeend", galleryItemString);
+// getGallery.insertAdjacentHTML("beforeend", galleryItemString);
+
+const galaryContainer = document.querySelector("#gallery");
+
+const imagesHtmlCode = images.map(
+  ({url, alt}) =>
+  `<li class = 'galery-item'> <img src ='${url}' alt = '${alt}' class = 'galery-img'>  </li>`
+  ).join('');
+
+galaryContainer.insertAdjacentHTML("beforeend", imagesHtmlCode)
